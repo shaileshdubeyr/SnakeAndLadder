@@ -13,8 +13,8 @@ public class App
 {
     public static void main( String[] args )
     {
-    		final Logger Log= LogManager.getLogger(App.class);
-        	String message = "Hello  world";
+    	 	final Logger Log = LogManager.getLogger(App.class);
+        	String message = "i am learning java";
         	Log.debug(message + "will be printed on debug" );
         	Log.info(message +"will be printed on debug" );
         	Log.warn(message + "will be printed on debug" );
@@ -22,6 +22,5 @@ public class App
         	Log.fatal(message + "will be printed on debug" );
         	Log.info("Appending string : {}.",message);
             System.out.println(message);
-            System.out.println( "Hello World!" );
     }
 }
