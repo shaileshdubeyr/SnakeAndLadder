@@ -12,7 +12,7 @@ public class EmployeeAttendence {
 			}
 			else
 			{
-				System.out.println("employee is not present");
+				System.out.println("employee is  nn not present");
 			}
 	}
 
