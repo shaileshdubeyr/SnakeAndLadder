@@ -10,22 +10,20 @@ public class EmployeeAttendence {
 			int PartTime = 4;
 			int TotalSal;
 			int Isfor = (int)(Math.random() * 3);
-			if(Isfor == 1)
-			{
+			switch(Isfor) {
+			case 1:
 				System.out.println("Employee is present for full time");
-				TotalSal=WagPerHrs * FullTime;
-			}
-			else if (Isfor == 2)
-			{
+				TotalSal = WagPerHrs * FullTime;
+				break;
+			case 2:
 				System.out.println("Employee is present for part time");
-				TotalSal= WagPerHrs * PartTime;
-				
-			}
-			else
-			{
+				TotalSal = WagPerHrs * PartTime;
+				break;
+			default:
 				System.out.println("Employee is not present");
-				TotalSal= WagPerHrs * FullTime * Isfor;
-			}
+				TotalSal = WagPerHrs * FullTime * Isfor;
+				break;
+		}
 		System.out.println("The total salary is " +TotalSal);
 	}
 
