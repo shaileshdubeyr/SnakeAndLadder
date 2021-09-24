@@ -6,7 +6,7 @@ public class Addition {
 		
 		int x= 3 , y= 6;
 		int sum=x+y;
-		System.out.println("the sum is "sum);
+		System.out.println("the sum is "+sum);
 	}
 
 }
