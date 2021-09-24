@@ -12,7 +12,7 @@ public class EmployeeAttendence {
 			if(EmpStatus == 1)
 			{
 				System.out.println("Employee is present");
-				TotalSal=WagPerHrs * FullDay * EmpStatus;
+				TotalSal=WagPerHrs * FullDay *EmpStatus;
 			}
 			else
 			{
