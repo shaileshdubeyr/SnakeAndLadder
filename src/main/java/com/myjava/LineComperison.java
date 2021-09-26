@@ -21,7 +21,7 @@ public class LineComperison {
 		System.out.printf("the slope is line 2 %.2f \n",slope1);
 		String string= String.valueOf(slope);
 		String string1=String.valueOf(slope1);
-		System.out.println(string.equals(string1));
+		System.out.println(string.compareTo(string1));
 		
 	}
 
