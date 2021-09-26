@@ -7,28 +7,54 @@ public class EmployeeAttendence {
 			System.out.println("Welcome to Employee Wage Computation");
 			int wagPerHrs = 20;
 			int workingHours;
-			int totalDays=20;
-			
-			
+			int totalWorkingHours = 0;
+			int totalDays = 0;
+			int counterForPresentFullTime=0;
+			int counterForPresentHalfTime=0;
+			int totalSalary=0;
+			while( totalDays <= 19 && totalWorkingHours <= 100)
+			{
+				totalDays++;
 				int employWorkingTime = (int)(Math.random() *3);
-				System.out.println("employee ststus"+employWorkingTime);
 				switch(employWorkingTime) {
 				case 1:
-					System.out.println("Employee is present for full time");
-						workingHours=8;
+					workingHours=8;
+					counterForPresentFullTime = counterForPresentFullTime + workingHours;
+					if(counterForPresentFullTime == 100) {
+						totalWorkingHours = 100;
+					}
 					break;
 				case 2:
-					System.out.println("Employee is present for part time");
 					workingHours=4;
+					counterForPresentHalfTime = counterForPresentHalfTime + workingHours;
+					if(counterForPresentHalfTime == 100 ) {
+						totalWorkingHours = 100;
+					}
 					break;
 				default:
-					System.out.println("Employee is not present");
 					workingHours=0;
 					break;
-			}
-			int totalSalary=workingHours*wagPerHrs*totalDays; 	
-			System.out.println("The total salary is " +totalSalary);
+			}	
 		}
+			System.out.println("the days" +totalDays);
+			System.out.println("the total working hours " +totalWorkingHours);
+
+			if( totalDays == 20 ) {
+				
+				totalSalary= wagPerHrs * counterForPresentFullTime * totalDays;  
+				System.out.println("employee for full time salery "+totalSalary);
+				totalSalary= wagPerHrs * counterForPresentHalfTime * totalDays;  
+				System.out.println("employee for half time salery "+totalSalary);		
+			}
+			else {
+				
+				totalSalary= wagPerHrs * totalWorkingHours;  
+				System.out.println("employee for full time salery "+totalSalary);
+				totalSalary= wagPerHrs * totalWorkingHours ;  
+				System.out.println("employee for half time salery "+totalSalary);
+			
+			}
 	}
+}
 
 
