@@ -9,6 +9,7 @@ public class SnakeAndLadder {
 	static int playerPlayingLadderAndSnake() {
 		int playerPositatoion = 0;
 		int previousPositation;
+		int counter=0;
 		while(true) {
 			int ladderOrSnakeValue = (int)(Math.random() * 3 );
 			System.out.println("the snake ladder "+ladderOrSnakeValue);
@@ -29,7 +30,11 @@ public class SnakeAndLadder {
 				playerPositatoion = playerPositatoion;
 				if ( playerPositatoion == 100 )
 					break;
+				
+		counter++;
+		System.out.println("the positation of the player "+playerPositatoion);
 		}
+			System.out.println("the total number of time die rolls "+counter);
 			return playerPositatoion;
 	}
 		
