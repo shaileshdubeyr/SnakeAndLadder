@@ -7,12 +7,11 @@ public class SnakeAndLadder {
 			System.out.println("the player positation is " +positionOfplyer);
 	}
 	static int playerPlayingLadderAndSnake() {
-		int playerPositatoion=0;
-		int ladderOrSnakeValue= (int)(Math.random() * 3 );
+		int playerPositatoion = 0;
+		int ladderOrSnakeValue = (int)(Math.random() * 3 );
 		System.out.println("the snake ladder "+ladderOrSnakeValue);
 		int dieValue= (int)( (Math.random() * 6 ) + 1 );
-		System.out.println("the dice value is "+dieValue);
-			
+		System.out.println("the dice value is "+dieValue);			
 		if( ladderOrSnakeValue == 1 )
 			playerPositatoion= playerPositatoion + dieValue;		
 		else if( ladderOrSnakeValue == 2) {
