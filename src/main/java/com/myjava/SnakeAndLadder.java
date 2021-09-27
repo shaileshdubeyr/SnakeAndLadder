@@ -21,9 +21,9 @@ public class SnakeAndLadder {
 					playerPositatoion = previousPositation;
 			}
 			else if ( ladderOrSnakeValue == 2) {
-					playerPositatoion = playerPositatoion - dieValue;
-					if ( playerPositatoion < 0 )
-						playerPositatoion = 0;
+				playerPositatoion = playerPositatoion - dieValue;
+				if ( playerPositatoion < 0 )
+					playerPositatoion = 0;
 			}
 			else 
 				playerPositatoion = playerPositatoion;
